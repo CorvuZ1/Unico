@@ -329,19 +329,22 @@ html, body {
     width: 225px;
     min-height: 477px;
     padding: 0px 0px 30px 0px;
+    position: relative;
   }
   &__current-price, &__name {
-    margin-bottom: 14px;
+    margin-bottom: 11px;
   }
   &__img {
     align-self: center;
+    position: absolute;
+    top: 27px;
     margin-bottom: 20px;
   }
   &__name {
     @include font("LatoRegular", #9a9a9a, 14px);
   }
   &__without-sale-row {
-    margin-bottom: 11px;
+    margin-bottom: 3px;
   }
   &__previous-price {
     @include font("LatoLight", #9a9a9a, 16px);

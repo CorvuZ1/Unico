@@ -1,0 +1,139 @@
+@media (max-width: 1210px) {
+  .categories__inner {
+    grid-gap: 15px;
+  }
+  .categories__img {
+    width: 85%;
+  }
+  .categories__link {
+    display: flex;
+    justify-content: center;
+  }
+  .window {
+    background-size: 115%;
+  }
+  .center-right {
+    align-self: flex-end;
+    &__img {
+      width: 100%;
+    }
+  }
+  .header__search {
+    max-width: 290px;
+  }
+  .header__company {
+    max-width: 400px;
+  }
+}
+// ----------------------------------------
+@media (max-width: 1024px) {
+  .window {
+    background-size: 160%;
+  }
+  .center-right {
+    align-self: center;
+    background-image: url("imgs/window/bottles.png");
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 327px;
+    &__img {
+      display: none;
+    }
+  }
+  .footer__links {
+    max-width: none;
+    width: auto;
+  }
+  .footer__links-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__about-title {
+    grid-column: 2/2;
+  }
+  .footer__categories-title {
+    grid-column: 1/2;
+  }
+  .categories__info {
+    top: 7px;
+    left: 7px;
+  }
+  .categories__big-text {
+    top: 37%;
+    left: 25px;
+  }
+  .header__general {
+    display: grid;
+    grid-template-columns: 1fr 320px 150px 150px 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+  }
+  .header__company {
+    grid-column: 2/5;
+    min-width: 100%;
+    justify-content: center;
+    &-name {
+      margin: 0 15px;
+    }
+  }
+  .header__search {
+    grid-column: 2/2;
+    min-width: 100%;
+  }
+}
+// ----------------------------------------
+@media (max-width: 768px) {
+  .header__about::after {
+    display: none;
+  }
+  .header__general {
+    grid-template-columns: 1fr 10px;
+    padding: 0 60px;
+  }
+  .header__search {
+    grid-column: 1/2
+  }
+  .header__company {
+    grid-column: 1/4;
+  }
+  .header__company-description {
+    display: none;
+  }
+  .window {
+    min-height: 100vh;
+    background-size: unset;
+  }
+  .center__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .center-left {
+    height: 250px;
+    align-items: center;
+    text-align: center;
+    &__subtitle {
+      height: auto;
+    }
+  }
+  .center-right {
+    margin-top: 20px;
+    width: 210px;
+  }
+}
+// ----------------------------------------
+@media (max-width: 576px) {
+  .center-left__subtitle {
+    font-size: 25px;
+    width: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__general {
+    display: flex;
+    flex-direction: column;
+  }
+  .burger {
+    width: 53px;
+    height: 53px;
+  }
+}

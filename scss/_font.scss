@@ -28,3 +28,7 @@
   color: $color;
   font-size: $size;
 }
+
+@mixin fontSize($origFontSize, $minFontSize) {
+  font-size: calc(#{$minFontSize + px} + (#{$origFontSize - $minFontSize}) * ((100vw - 320px) / (1920 - 320)));
+}

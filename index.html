@@ -2,9 +2,6 @@
 <html lang="ru">
 <head>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="scripts/slick.min.js"></script>
-  <script src="scripts/script.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,76 +10,80 @@
 <body>
   <div class="window">
     <header class="header">
-      <div class="container">
-        <nav class="header__about">
-          <ul class="header__about-list">
-            <li class="header__about-item">
-              <a class="header__about-link" href="#">О магазине</a>
-            </li>
-            <li class="header__about-item">
-              <a class="header__about-link" href="#">Доставка и оплата</a>
-            </li>
-            <li class="header__about-item">
-              <a class="header__about-link" href="#">Возврат товара</a>
-            </li>
-            <li class="header__about-item">
-              <a class="header__about-link header__sales" href="#">Акции</a>
-            </li>
-          </ul>
-          <div class="header__phone">
-            <a class="header__numberphone" href="tel:+74232564936">+7 (423) 256-49-36</a>
-            <a class="header__whatsapp" href="https://wa.me/+74232564936">Написать в Whats App</a>
+      <div class="burger"></div>
+      <div class="mobile-menu"></div> 
+      <div class="header__inner">
+        <div class="container">
+          <nav class="header__about">
+            <ul class="header__about-list">
+              <li class="header__about-item">
+                <a class="header__about-link" href="#">О магазине</a>
+              </li>
+              <li class="header__about-item">
+                <a class="header__about-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="header__about-item">
+                <a class="header__about-link" href="#">Возврат товара</a>
+              </li>
+              <li class="header__about-item">
+                <a class="header__about-link header__sales" href="#">Акции</a>
+              </li>
+            </ul>
+            <div class="header__phone">
+              <a class="header__numberphone" href="tel:+74232564936">+7 (423) 256-49-36</a>
+              <a class="header__whatsapp" href="https://wa.me/+74232564936">Написать в Whats App</a>
+            </div>
+          </nav>
+          <!--  -->
+          <div class="header__general">
+            <div class="header__company">
+              <img class="header__company-logo" src="imgs/header/company_logo.png" alt="Лого Unico Group">
+              <img class="header__company-name" src="imgs/header/company_name.png" alt="Описание Unico Group">
+              <span class="header__company-description">Сеть магазинов косметики <br> и бытовой химии из Южной Кореи</span>
+            </div>
+            <div class="header__search">
+              <input class="header__search-input" placeholder="Я хочу купить ..." type="text"> 
+              <img class="header__search-loupe" src="imgs/header/loupe.png" alt="Лупа">
+            </div>
+            <div class="header__auth">
+              <img class="header__user" src="imgs/header/user.png" alt="Личный кабинет">
+              <nav>
+                <a class="header__signin" href="#">Вход</a>
+                <a class="header__signup" href="#">Регистрация</a>
+              </nav>
+            </div>
+            <div class="header__cart">
+              <span class="header__count">2</span>
+              <nav>
+                <a href="#" class="header__cart-word">Корзина:</a>
+                <span class="header__price">25 860 р.</span>
+              </nav>
+            </div>
           </div>
-        </nav>
-        <!--  -->
-        <div class="header__general">
-          <div class="header__company">
-            <img class="header__company-logo" src="imgs/header/company_logo.png">
-            <img class="header__company-name" src="imgs/header/company_name.png">
-            <span class="header__company-description">Сеть магазинов косметики <br> и бытовой химии из Южной Кореи</span>
-          </div>
-          <div class="header__search">
-            <input class="header__search-input" placeholder="Я хочу купить ..." type="text"> 
-            <img class="header__search-loupe" src="imgs/header/loupe.png">
-          </div>
-          <div class="header__auth">
-            <img class="header__user" src="imgs/header/user.png">
-            <nav>
-              <a class="header__signin" href="#">Вход</a>
-              <a class="header__signup" href="#">Регистрация</a>
-            </nav>
-          </div>
-          <div class="header__cart">
-            <span class="header__count">2</span>
-            <nav>
-              <a href="#" class="header__cart-word">Корзина:</a>
-              <span class="header__price">25 860 р.</span>
-            </nav>
-          </div>
+          <!--  -->
+          <nav class="header__category">
+            <ul class="header__category-list">
+              <li class="header__category-item">
+                <a href="#" class="header__category-link">УХОД ЗА ВОЛОСАМИ</a>
+              </li>
+              <li class="header__category-item">
+                <a href="#" class="header__category-link">УХОД ЗА ТЕЛОМ</a>
+              </li>
+              <li class="header__category-item">
+                <a href="#" class="header__category-link">УХОД ЗА ЛИЦОМ</a>
+              </li>
+              <li class="header__category-item">
+                <a href="#" class="header__category-link">ЗАБОТА О ЗДОРОВЬЕ</a>
+              </li>
+              <li class="header__category-item">
+                <a href="#" class="header__category-link">ЗАБОТА О ДЕТЯХ</a>
+              </li>
+              <li class="header__category-item">
+                <a href="#" class="header__category-link">ТОВАРЫ ДЛЯ ДОМА</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <!--  -->
-        <nav class="header__category">
-          <ul class="header__category-list">
-            <li class="header__category-item">
-              <a href="#" class="header__category-link">УХОД ЗА ВОЛОСАМИ</a>
-            </li>
-            <li class="header__category-item">
-              <a href="#" class="header__category-link">УХОД ЗА ТЕЛОМ</a>
-            </li>
-            <li class="header__category-item">
-              <a href="#" class="header__category-link">УХОД ЗА ЛИЦОМ</a>
-            </li>
-            <li class="header__category-item">
-              <a href="#" class="header__category-link">ЗАБОТА О ЗДОРОВЬЕ</a>
-            </li>
-            <li class="header__category-item">
-              <a href="#" class="header__category-link">ЗАБОТА О ДЕТЯХ</a>
-            </li>
-            <li class="header__category-item">
-              <a href="#" class="header__category-link">ТОВАРЫ ДЛЯ ДОМА</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
       
@@ -90,14 +91,14 @@
       <div class="container">
         <div class="center__inner">
           <div class="center-left">
-            <img src="imgs/window/logotype.png" class="center-left__title">
+            <img src="imgs/window/logotype.png" class="center-left__title" alt="Логотип">
             <p class="center-left__subtitle">
               профессиональный уход за волосами у вас дома!
             </p>
             <a href="#" class="center-left__catalog-btn">В КАТАЛОГ</a>
           </div>
           <div class="center-right">
-            <img class="center-right__img" src="imgs/window/center_img.png" alt="">
+            <img class="center-right__img" src="imgs/window/center_img.png" alt>
           </div>
         </div>
       </div>
@@ -108,28 +109,28 @@
     <div class="container">
       <div class="categories__inner">
         <a href="#" class="categories__link categories__body">
-          <span class="categories__info">УХОД <br> ЗА ТЕЛОМ</span>
-          <img class="categories__img" src="imgs/categories/body.png" alt="">
+          <span class="categories__info categories__big-text">УХОД <br> ЗА ТЕЛОМ</span>
+          <img class="categories__img" src="imgs/categories/body.png" alt>
         </a>
         <a href="#" class="categories__link categories__hair">
           <span class="categories__info">УХОД <br> ЗА ВОЛОСАМИ</span>
-          <img class="categories__img" src="imgs/categories/hair.png" alt="">
+          <img class="categories__img" src="imgs/categories/hair.png" alt>
         </a>
         <a href="#" class="categories__link categories__face">
           <span class="categories__info">УХОД <br> ЗА ЛИЦОМ</span>
-          <img class="categories__img" src="imgs/categories/face.png" alt="">
+          <img class="categories__img" src="imgs/categories/face.png" alt>
         </a>
         <a href="#" class="categories__link categories__health">
           <span class="categories__info">ЗАБОТА <br> О ЗДОРОВЬЕ</span>
-          <img class="categories__img" src="imgs/categories/health.png" alt="">
+          <img class="categories__img" src="imgs/categories/health.png" alt>
         </a>
         <a href="#" class="categories__link categories__child">
           <span class="categories__info">ЗАБОТА <br> О ДЕТЯХ</span>
-          <img class="categories__img" src="imgs/categories/child.png" alt="">
+          <img class="categories__img" src="imgs/categories/child.png" alt>
         </a>
         <a href="#" class="categories__link categories__household">
-          <span class="categories__info">ТОВАРЫ <br> ДЛЯ ДОМА</span>
-          <img class="categories__img" src="imgs/categories/household.png" alt="">
+          <span class="categories__info categories__big-text">ТОВАРЫ <br> ДЛЯ ДОМА</span>
+          <img class="categories__img" src="imgs/categories/household.png" alt>
         </a>
       </div>
     </div>
@@ -142,7 +143,7 @@
 
         <div class="popular__item">
           <div class="popular__content">
-            <img src="imgs/popular/product1.png" alt="" class="popular__img">
+            <img src="imgs/popular/product1.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">FarmStay</span>
             <span class="popular__current-price">550 руб.</span>
             <span class="popular__description">Шампунь и кондиционер Naturing уход за кожей головы</span>
@@ -152,7 +153,7 @@
         
         <div class="popular__item popular__item-with-sale">
           <div class="popular__content">
-            <img src="imgs/popular/product2.png" alt="" class="popular__img">
+            <img src="imgs/popular/product2.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">Cell Burner</span>
             <div class="popular__without-sale-row">
               <span class="popular__previous-price">2 250 руб.</span>
@@ -166,7 +167,7 @@
         
         <div class="popular__item">
           <div class="popular__content">
-            <img src="imgs/popular/product3.png" alt="" class="popular__img">
+            <img src="imgs/popular/product3.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">Kerasys</span>
             <span class="popular__current-price">320 руб.</span>
             <span class="popular__description">Шампунь и кондиционер Naturing уход за кожей головы</span>
@@ -176,7 +177,7 @@
         
         <div class="popular__item">
           <div class="popular__content">
-            <img src="imgs/popular/product4.png" alt="" class="popular__img">
+            <img src="imgs/popular/product4.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">Jungnani</span>
             <span class="popular__current-price">320 руб.</span>
             <span class="popular__description">Шампунь и кондиционер Naturing уход за кожей головы</span>
@@ -186,7 +187,7 @@
         
         <div class="popular__item">
           <div class="popular__content">
-            <img src="imgs/popular/product4.png" alt="" class="popular__img">
+            <img src="imgs/popular/product4.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">Jungnani</span>
             <span class="popular__current-price">320 руб.</span>
             <span class="popular__description">Шампунь и кондиционер Naturing уход за кожей головы</span>
@@ -196,7 +197,7 @@
         
         <div class="popular__item">
           <div class="popular__content">
-            <img src="imgs/popular/product3.png" alt="" class="popular__img">
+            <img src="imgs/popular/product3.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">Kerasys</span>
             <span class="popular__current-price">320 руб.</span>
             <span class="popular__description">Шампунь и кондиционер Naturing уход за кожей головы</span>
@@ -206,7 +207,7 @@
         
         <div class="popular__item">
           <div class="popular__content">
-            <img src="imgs/popular/product1.png" alt="" class="popular__img">
+            <img src="imgs/popular/product1.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">FarmStay</span>
             <span class="popular__current-price">550 руб.</span>
             <span class="popular__description">Шампунь и кондиционер Naturing уход за кожей головы</span>
@@ -216,7 +217,7 @@
         
         <div class="popular__item popular__item-with-sale">
           <div class="popular__content">
-            <img src="imgs/popular/product2.png" alt="" class="popular__img">
+            <img src="imgs/popular/product2.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">Cell Burner</span>
             <div class="popular__without-sale-row">
               <span class="popular__previous-price">2 250 руб.</span>
@@ -230,7 +231,7 @@
         
         <div class="popular__item">
           <div class="popular__content">
-            <img src="imgs/popular/product1.png" alt="" class="popular__img">
+            <img src="imgs/popular/product1.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">FarmStay</span>
             <span class="popular__current-price">550 руб.</span>
             <span class="popular__description">Шампунь и кондиционер Naturing уход за кожей головы</span>
@@ -240,7 +241,7 @@
         
         <div class="popular__item popular__item-with-sale">
           <div class="popular__content">
-            <img src="imgs/popular/product2.png" alt="" class="popular__img">
+            <img src="imgs/popular/product2.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">Cell Burner</span>
             <div class="popular__without-sale-row">
               <span class="popular__previous-price">2 250 руб.</span>
@@ -254,7 +255,7 @@
         
         <div class="popular__item">
           <div class="popular__content">
-            <img src="imgs/popular/product3.png" alt="" class="popular__img">
+            <img src="imgs/popular/product3.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">Kerasys</span>
             <span class="popular__current-price">320 руб.</span>
             <span class="popular__description">Шампунь и кондиционер Naturing уход за кожей головы</span>
@@ -264,7 +265,7 @@
         
         <div class="popular__item">
           <div class="popular__content">
-            <img src="imgs/popular/product4.png" alt="" class="popular__img">
+            <img src="imgs/popular/product4.png" alt="Шампунь и кондиционер Naturing уход за кожей головы" class="popular__img">
             <span class="popular__name">Jungnani</span>
             <span class="popular__current-price">320 руб.</span>
             <span class="popular__description">Шампунь и кондиционер Naturing уход за кожей головы</span>
@@ -280,22 +281,22 @@
     <div class="container">
       <div class="slider">
         <div class="slider__item">
-          <img src="imgs/slider-block/slider_logo.png" alt="">
+          <img src="imgs/slider-block/slider_logo.png" alt="Лого">
         </div>
         <div class="slider__item">
-          <img src="imgs/slider-block/slider_logo.png" alt="">
+          <img src="imgs/slider-block/slider_logo.png" alt="Лого">
         </div>
         <div class="slider__item">
-          <img src="imgs/slider-block/slider_logo.png" alt="">
+          <img src="imgs/slider-block/slider_logo.png" alt="Лого">
         </div>
         <div class="slider__item">
-          <img src="imgs/slider-block/slider_logo.png" alt="">
+          <img src="imgs/slider-block/slider_logo.png" alt="Лого">
         </div>
         <div class="slider__item">
-          <img src="imgs/slider-block/slider_logo.png" alt="">
+          <img src="imgs/slider-block/slider_logo.png" alt="Лого">
         </div>
         <div class="slider__item">
-          <img src="imgs/slider-block/slider_logo.png" alt="">
+          <img src="imgs/slider-block/slider_logo.png" alt="Лого">
         </div>
       </div>
     </div>
@@ -305,7 +306,7 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__general">
-          <img class="footer__company-logo" src="imgs/footer/company_logo.png">
+          <img class="footer__company-logo" src="imgs/footer/company_logo.png" alt="Лого Unico Group">
           <ul class="footer__general-list">
             <li><span class="footer__company-description">Сеть магазинов косметики <br> и бытовой химии</span></li>
             <li><a class="footer__numberphone" href="tel:+74232564936">+7 (423) 256-49-36</a></li>
@@ -355,11 +356,15 @@
 
         <div class="footer__developer">
           <span class="footer__developer-title">Разработка сайта:</span>
-          <img class="footer__atom" src="imgs/footer/atom.png" alt="" >
+          <img class="footer__atom" src="imgs/footer/atom.png" alt="Atom">
         </div>
       </div>
     </div>
   </footer>
-
+  
+  <script src="scripts/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
+  <script src="scripts/sliderConnect.js"></script>
 </body>
 </html>

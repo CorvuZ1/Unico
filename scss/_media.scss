@@ -150,6 +150,42 @@
   .footer__links-list {
     grid-template-columns: 1fr 127px;
   }
+
+  .header__category-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__category-item {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .header__about-link {
+    color: #333333;
+    font-family: "LatoSemibold";
+  }
+  .header__about-list {
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 28px;
+  }
+  .header__about-item {
+    margin-top:7px;
+  }
+  .header__sales {
+    &::after {
+      display: none;
+    }
+  }
+  .header__phone {
+    margin: 0;
+    flex-direction: column;
+    padding-bottom: 28px;
+  }
+  .header__signup, .header__signin {
+    display: inline-block;
+    padding-bottom: 28px;
+  }
+  
 }
 // ----------------------------------------
 @media (max-width: 576px) {
@@ -184,6 +220,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 0px 15px;
   }
   .categories__info br {

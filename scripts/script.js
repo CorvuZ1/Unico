@@ -3,15 +3,14 @@ let about = document.querySelector(".header__about"),
     burger = document.querySelector(".burger"),
     header = document.querySelector(".header__inner"),
     mobileMenu = document.querySelector(".mobile-menu"),
-    auth = document.querySelector(".header__auth"),
-    cart = document.querySelector(".header__cart");
+    auth = document.querySelector(".header__auth");
 
 window.addEventListener("DOMContentLoaded", () => mobileTransform());
 
 let nodesArray = [
+  Array.from(auth.childNodes),
   Array.from(about.childNodes), 
-  Array.from(category.childNodes),
-  Array.from(auth.childNodes)
+  Array.from(category.childNodes)
 ];
 
 function mobileTransform() {
@@ -20,7 +19,7 @@ function mobileTransform() {
     if (nodesArray) {
       nodesArray.map(nodes => {
         for (let node of nodes) {
-          mobileMenu.appendChild(node)
+          mobileMenu.appendChild(node);
         }
       });
     }
@@ -31,6 +30,7 @@ burger.addEventListener("click", function() {
   burger.classList.toggle("burger-active");
   if (burger.classList.contains("burger-active")) {
     document.body.style.overflow = "hidden";
+    
   } else {
     document.body.style.overflow = "auto";
   }

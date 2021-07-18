@@ -56,9 +56,6 @@
     max-width: none;
     width: auto;
   }
-  .footer__links {
-    
-  }
   .footer__links-list {
     grid-column-gap: 25px;
     grid-template-columns: repeat(2, 140px);
@@ -138,6 +135,21 @@
     margin-top: 20px;
     width: 210px;
   }
+  .footer__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 35px;
+  }
+
+  .footer__developer {
+    height: auto;
+    align-self: center;
+    width: 90px;
+  }
+  .footer__links-list {
+    grid-template-columns: 1fr 127px;
+  }
 }
 // ----------------------------------------
 @media (max-width: 576px) {
@@ -189,6 +201,5 @@
   }
   .header__cart {
     margin-left: 20px;
-  }
-  
+  } 
 }

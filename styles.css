@@ -37,7 +37,6 @@
 html, body {
   width: 100%;
   min-height: 100%;
-  min-width: 320px;
 }
 
 .container {
@@ -1055,6 +1054,30 @@ html, body {
   .center-right {
     margin-top: 20px;
     width: 210px;
+  }
+  .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-row-gap: 35px;
+  }
+  .footer__developer {
+    height: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 90px;
+  }
+  .footer__links-list {
+    -ms-grid-columns: 1fr 127px;
+        grid-template-columns: 1fr 127px;
   }
 }
 

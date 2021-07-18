@@ -105,6 +105,9 @@
     grid-template-columns: 1fr 10px;
     padding: 0 60px;
   }
+  .footer__general {
+    align-items: center;
+  }
   .header__search {
     grid-column: 1/2
   }
@@ -152,6 +155,7 @@
   }
 
   .header__category-list {
+    text-align: center;
     flex-direction: column;
     align-items: center;
   }
@@ -176,10 +180,12 @@
       display: none;
     }
   }
+  
   .header__phone {
     margin: 0;
     flex-direction: column;
     padding-bottom: 28px;
+    text-align: center;
   }
   .header__signup, .header__signin {
     display: inline-block;
@@ -234,6 +240,9 @@
   }
   .header__general {
     display: flex;
+    grid-gap: none;
+    height: 132px;
+    justify-content: space-between;
     flex-direction: column;
   }
   .header__cart {

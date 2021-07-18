@@ -37,6 +37,7 @@
 html, body {
   width: 100%;
   min-height: 100%;
+  min-width: 280px;
 }
 
 .container {
@@ -854,19 +855,61 @@ html, body {
 
 .burger {
   width: 50px;
-  height: 50px;
-  position: absolute;
+  height: 45px;
+  position: fixed;
   z-index: 101;
-  background-color: red;
-  top: 5px;
-  right: 5px;
+  top: 8px;
+  right: 8px;
   display: none;
   cursor: pointer;
 }
 
+.burger__line {
+  -webkit-transition-duration: 0.15s;
+       -o-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #ed1c24;
+  border-radius: 50px;
+}
+
+.burger__line:first-child {
+  bottom: -42px;
+}
+
+.burger__line:first-child::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: #ed1c24;
+  top: -20px;
+}
+
+.burger.burger-active .burger__line:first-child {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 20px;
+  background-color: black;
+}
+
+.burger.burger-active .burger__line:first-child::after {
+  display: none;
+}
+
+.burger.burger-active .burger__line:last-child {
+  top: 18px;
+  background-color: black;
+  -webkit-transform: rotate(-44deg);
+      -ms-transform: rotate(-44deg);
+          transform: rotate(-44deg);
+}
+
 .burger.burger-active {
   display: block;
-  background-color: black;
 }
 
 .mobile-menu {
@@ -901,6 +944,10 @@ html, body {
   padding: 0 100px;
   width: 100vw;
   visibility: visible;
+}
+
+#top-scroll {
+  position: absolute;
 }
 
 @media (max-width: 1210px) {
@@ -1029,6 +1076,11 @@ html, body {
         grid-template-columns: 1fr 10px;
     padding: 0 60px;
   }
+  .footer__general {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .header__search {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -1095,6 +1147,7 @@ html, body {
         grid-template-columns: 1fr 127px;
   }
   .header__category-list {
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1132,6 +1185,7 @@ html, body {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 28px;
+    text-align: center;
   }
   .header__signup, .header__signin {
     display: inline-block;
@@ -1199,6 +1253,11 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    grid-gap: none;
+    height: 132px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

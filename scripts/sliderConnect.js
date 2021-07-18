@@ -17,13 +17,13 @@ $(document).ready(function() {
         }
       },
       {
-        breakpoint: 580,
+        breakpoint: 590,
         settings: {
           slidesToShow: 2
         }
       },
       {
-        breakpoint: 425,
+        breakpoint: 435,
         settings: {
           slidesToShow: 1
         }

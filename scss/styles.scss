@@ -13,12 +13,8 @@
 
 html, body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   min-width: 320px;
-}
-
-.burger.burger.burger-active ~ body{
-  display: none;
 }
 
 .container {
@@ -31,6 +27,7 @@ html, body {
 .window {
   min-height: 630px;
   max-height: 630px;
+  height: 100%;
   height: 100%;
   background-image: url("imgs/window/bg.png");
   background-position: center 34%;
@@ -223,7 +220,7 @@ html, body {
   height: 100%;
   display: flex;
   &__inner {
-    min-height: 100%;
+    min-height: 480px;
     display: flex;
     align-items: center; 
     justify-content: space-between; 
@@ -238,7 +235,7 @@ html, body {
     }
     &__subtitle {
       @include font("LatoLight", #333333, 1);
-      @include fontSize(40, 33);
+      @include fontSize(40, 29);
       height: 135px;
       width: 494px;
     }
@@ -249,9 +246,15 @@ html, body {
       padding: 17px 0;
       font-weight: normal;
       @include font("LatoLight", #000000, 16px);
+      transition-duration: 0.15s;
+      &:hover {
+        background-color: $crimson;
+        color: #ffffff;
+      }
     }
   }
   &-right {
+    height: 100%;
     &__img {
       position: relative;
       top: 20px;
@@ -287,7 +290,7 @@ html, body {
   }
   &__info {
     @include font("LatoLight", #333333, 1);
-    @include fontSize(24, 16);
+    @include fontSize(24, 15);
     position: absolute;
     top: 20px;
     left: 35px;
@@ -296,7 +299,7 @@ html, body {
     top: 37%; 
     left: 60px;
     @include font("LatoLight", #333333, 1);
-    @include fontSize(30, 18)
+    @include fontSize(30, 15)
   }
 }
 
@@ -319,6 +322,7 @@ html, body {
     border-bottom: 1px solid #f2f2f2;
     flex-grow: 1;
     flex-basis: 25%;
+    max-width: 292px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -519,7 +523,7 @@ html, body {
   }
   &__links-list {
     display: grid;
-    grid-column-gap: 4vw;
+    grid-column-gap: 69px;
     grid-row-gap: 12px;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -531,10 +535,10 @@ html, body {
     grid-row: 1/2;
   }
   &__categories-title, &__about-title {
-    @include font("LatoSemibold", #333333, 12px);
+    @include font("LatoSemibold", #333333, 15px);
   }
   &__category-link, &__about-link {
-    @include font("LatoLight", #333333, 14px);
+    @include font("LatoLight", #333333, 15px);
   }
   &__developer {
     height: 140px;
@@ -552,33 +556,37 @@ html, body {
 }
 
 .burger {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   z-index: 101;
   background-color: red;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   display: none;
   cursor: pointer;
 }
 
 .burger.burger-active {
   display: block;
+  background-color: black;
 }
 
 .mobile-menu {
   position: absolute;
   z-index: 100;
   background-color: blue;
+  visibility: hidden;
   width: 100vw;
   height: 100vh;
-  transition-duration: 0.1s;
+  transition-duration: 0.15s;
   top: -103%;
 }
 
 .burger.burger-active ~ .mobile-menu {
   top: 0%;
+  padding: 0 100px;
+  visibility: visible;
 }
 
 @import "_media.scss";

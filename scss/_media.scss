@@ -141,7 +141,7 @@
   .footer__inner {
     flex-direction: column;
     justify-content: space-between;
-    height: 490px;
+    height: 400px;
     align-items: center;
     grid-row-gap: none;
   }
@@ -253,4 +253,7 @@
   .header__cart {
     margin-left: 20px;
   } 
+  .footer__inner {
+    height: 450px;
+  }
 }

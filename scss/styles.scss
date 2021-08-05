@@ -485,7 +485,7 @@ html, body {
   &__inner {
     padding: 32px 0px 18.5px 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   &__general {
     display: flex;
@@ -545,6 +545,7 @@ html, body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    position: relative;
     &-title {
       @include font("LatoRegular", #666666, 14px);
     }
